@@ -1,0 +1,12 @@
+# Visual Studio cache
+.vs/
+bin/
+obj/
+
+# user files
+*.user
+*.suo
+
+# build output
+Debug/
+Release/

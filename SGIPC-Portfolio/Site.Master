@@ -39,4 +39,46 @@
     </form>
     
 </body>
+    
 </html>
+<footer class="footer">
+    <div>
+        <p>About SGIPC</p>
+        <ul>
+            <li>Foundation</li>
+            <li>Mission</li>
+            <li>Contact</li>
+        </ul>
+
+    </div>
+    <div>
+        <p>Mentorship</p>
+        <ul>
+            <li>Program Details</li>
+            <li>Apply</li>
+            <li>Feedback</li>
+        </ul>
+
+    </div>
+    <div>
+        <p>Resources</p>
+        <ul>
+            <li>Training</li>
+            <li>Practice</li>
+            <li>Archives</li>
+        </ul>
+
+    </div>
+
+    <div>
+        <p>Social Media</p>
+        <ul>
+            <li>Github</li>
+            <li>Facebook</li>
+            <li>Youtube</li>
+            <li>LinkedIn</li>
+        </ul>
+
+    </div>
+
+</footer>

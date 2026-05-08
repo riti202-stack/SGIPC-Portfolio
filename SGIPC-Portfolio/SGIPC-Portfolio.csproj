@@ -121,6 +121,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="image\footer.png" />
     <Content Include="image\spark.png" />
     <Content Include="image\terminal.png" />
     <Content Include="index.aspx" />

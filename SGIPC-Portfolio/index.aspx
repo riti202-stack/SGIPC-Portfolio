@@ -15,8 +15,8 @@
            </div>
 
        </div>
-       <section>
-           <p>Impact at a Glance</p>
+       <section class="impact-section">
+           <p class="heading">Impact at a Glance</p>
            <div class="impact">
                <div>
                    <p>Active Members</p>
@@ -35,8 +35,8 @@
            </div>
        </section>
 
-       <section>
-           <p>Active Contests</p>
+       <section class="card-section">
+           <p class="heading">Active Contests</p>
            <div class="contest">
                <div class="card">
 
@@ -62,5 +62,7 @@
                </div>
 
        </section>
+
+       
     
 </asp:Content>

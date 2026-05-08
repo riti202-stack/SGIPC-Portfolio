@@ -122,6 +122,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="image\spark.png" />
+    <Content Include="image\terminal.png" />
     <Content Include="index.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />

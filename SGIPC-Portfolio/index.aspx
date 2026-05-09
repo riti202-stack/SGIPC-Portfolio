@@ -37,7 +37,7 @@
            </div>
        </section>
 
-       <section class="card-section">
+       <section class="card-section" id="view-contest">
            <p class="heading">Active Contests</p>
            <div class="contest">
                <div class="card">

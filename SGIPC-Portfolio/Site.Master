@@ -6,6 +6,7 @@
 <head runat="server">
     
     <link rel="stylesheet" type="text/css" href="style/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <asp:ContentPlaceHolder ID="Head" runat="server"></asp:ContentPlaceHolder>
         
    
@@ -19,13 +20,13 @@
     <nav class="nav">
         <p id="logo">KUET SGIPC</p>
         <div>
-            <ul id="list">
-                <li><a href="index.aspx" >Home</a></li>
-                <li><a href="About.aspx">About</a></li>
-                <li><a href="gallery.aspx">Gallery</a></li>
-                <li><a>Contests</a></li>
-                <li>Resources</li>
-                <li>Join</li>
+            <ul>
+                <li ><a href="index.aspx" >Home</a></li>
+                <li ><a href="About.aspx">About</a></li>
+                <li ><a href="gallery.aspx">Gallery</a></li>
+                <li ><a  href="index.aspx#view-contest">Contests</a></li>
+                <li ><a>Resources</a></li>
+                <li ><a href="joinUs.aspx">join</a></li>
             </ul>
         </div>
     </nav>

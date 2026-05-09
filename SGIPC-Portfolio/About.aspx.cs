@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace SGIPC_Portfolio
 {
-    public partial class About : Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+	public partial class About1 : System.Web.UI.Page
+	{
+		protected void Page_Load(object sender, EventArgs e)
+		{
 
-        }
-    }
+		}
+	}
 }

@@ -20,7 +20,7 @@
 }
 
 .photos{
-    display:flex;
+    display:flex;  
     justify-content:space-evenly;
     max-width:100%;
     height:600px;

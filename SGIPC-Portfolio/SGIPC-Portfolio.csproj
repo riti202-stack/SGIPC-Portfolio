@@ -185,6 +185,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="image\p1.png" />
+    <Content Include="style\About.css" />
     <Content Include="style\site.css" />
     <Content Include="style\gallery.css" />
     <Content Include="ViewSwitcher.ascx" />

@@ -1,0 +1,33 @@
+﻿#about{
+    height:300px;
+    max-width:70%;
+    color:white;
+    font-size:18px;
+    font-weight:800;
+    margin-top:20px;
+    margin-left:20px;
+    
+
+}
+.about-div {
+    border: 2px yellow solid;
+    border-radius: 25px;
+    padding:20px 0px 0px 10px;
+    max-width:70%;
+    height:300px;
+}
+
+#heading{
+    color:white;
+    margin-left:20px;
+
+}
+
+.banner{
+    color:yellow;
+    margin-left:20px;
+    height:300px;
+    max-width:100%;
+    align-content:center;
+    
+}

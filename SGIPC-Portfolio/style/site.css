@@ -31,19 +31,19 @@ ul,li{
     color:white;
 }
 
-.img{
-    background-image:url("../image/spark.png");
-   
-    background-size:cover;
-    height:600px;
-    max-width:100%;
-    border:2px yellow solid;
-    
+.img {
+    background-image: url(../image/spark.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    max-width: 100%;
+    border: 2px yellow solid;
+    border-radius: 20px;
 }
 .txt {
     color: white;
-    font-weight: 900;
-    font-size: 50px;
+    font-weight: 700;
+    font-size: 30px;
     vertical-align:central;
 }
 

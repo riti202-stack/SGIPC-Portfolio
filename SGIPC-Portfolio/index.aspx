@@ -1,8 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="SGIPC_Portfolio.index" %>
 
-   
+   <asp:Content ID="Content1"  ContentPlaceHolderID="Head" runat="server">
+       <link rel="stylesheet"  type="text/css" href="style/site.css" />
+   </asp:Content>
 
-   <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
+   <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
        <div class="img">
            <div id="txt-box">
                <p class="txt">System.out.println("KUET SGIPC");</p>
@@ -11,7 +13,7 @@
            </div>
 
            <div id="mid-img">
-               <img   src="../image/terminal.png" height="200px" width="400px" />
+               <img   src="../image/terminal.png" style="height:200px; width:400px" />
            </div>
 
        </div>

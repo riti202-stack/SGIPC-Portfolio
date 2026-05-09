@@ -17,12 +17,12 @@
 </head>
 <body>
     <nav class="nav">
-        <p>KUET SGIPC</p>
+        <p id="logo">KUET SGIPC</p>
         <div>
             <ul id="list">
-                <li><a>Home</a></li>
+                <li><a href="index.aspx" >Home</a></li>
                 <li><a>About</a></li>
-                <li><a>Gallery</a></li>
+                <li><a href="gallery.aspx">Gallery</a></li>
                 <li><a>Contests</a></li>
                 <li>Resources</li>
                 <li>Join</li>

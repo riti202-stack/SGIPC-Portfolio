@@ -5,11 +5,17 @@
 
 .nav {
     background-color:#0D450D;
-    height: 50px;
+    height: 100px;
     max-width: 100%;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
+}
+#logo{
+    margin-left:20px;
+    color:white;
+    font-weight:900;
+    font-size:25px;
 }
 body {
     background-color:rgb(9,26,8);

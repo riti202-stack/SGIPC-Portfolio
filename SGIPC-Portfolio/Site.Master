@@ -20,13 +20,13 @@
     <nav class="nav">
         <p id="logo">KUET SGIPC</p>
         <div>
-            <ul>
-                <li ><a href="index.aspx" >Home</a></li>
-                <li ><a href="About.aspx">About</a></li>
-                <li ><a href="gallery.aspx">Gallery</a></li>
-                <li ><a  href="index.aspx#view-contest">Contests</a></li>
-                <li ><a>Resources</a></li>
-                <li ><a href="joinUs.aspx">join</a></li>
+            <ul class="nav-links">
+                <li class="link" ><a href="index.aspx" >Home</a></li>
+                <li class="link"><a href="About.aspx">About</a></li>
+                <li class="link"><a href="gallery.aspx">Gallery</a></li>
+                <li class="link"><a  href="index.aspx#view-contest">Contests</a></li>
+                <li  class="link"><a>Resources</a></li>
+                <li class="link"><a href="joinUs.aspx">join</a></li>
             </ul>
         </div>
     </nav>
@@ -43,43 +43,49 @@
     
 </html>
 <footer class="footer">
-    <div>
-        <p>About SGIPC</p>
-        <ul>
-            <li>Foundation</li>
-            <li>Mission</li>
-            <li>Contact</li>
-        </ul>
+    <div class="footer-links">
+        <div cssClass="footer-div">
+    <p class="footer-head">About SGIPC</p>
+    <ul>
+        <li>Foundation</li>
+        <li>Mission</li>
+        <li>Contact</li>
+    </ul>
 
+</div>
+<div>
+    <p class="footer-head">Mentorship</p>
+    <ul>
+        <li>Program Details</li>
+        <li>Apply</li>
+        <li>Feedback</li>
+    </ul>
+
+</div>
+<div>
+    <p class="footer-head">Resources</p>
+    <ul>
+        <li>Training</li>
+        <li>Practice</li>
+        <li>Archives</li>
+    </ul>
+
+</div>
+
+<div>
+    <p class="footer-head">Social Media</p>  
+    <ul>
+        <li>Github</li>
+        <li>Facebook</li>
+        <li>Youtube</li>
+        <li>LinkedIn</li>
+    </ul>
+
+</div>
+    
     </div>
-    <div>
-        <p>Mentorship</p>
-        <ul>
-            <li>Program Details</li>
-            <li>Apply</li>
-            <li>Feedback</li>
-        </ul>
 
-    </div>
-    <div>
-        <p>Resources</p>
-        <ul>
-            <li>Training</li>
-            <li>Practice</li>
-            <li>Archives</li>
-        </ul>
+<p id="copy">© 2026 SGIPC Portfolio. All rights reserved.</p>
 
-    </div>
-
-    <div>
-        <p>Social Media</p>
-        <ul>
-            <li>Github</li>
-            <li>Facebook</li>
-            <li>Youtube</li>
-            <li>LinkedIn</li>
-        </ul>
-
-    </div>
 
 </footer>

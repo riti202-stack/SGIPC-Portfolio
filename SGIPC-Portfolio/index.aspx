@@ -39,29 +39,27 @@
 
        <section class="card-section" id="view-contest">
            <p class="heading">Active Contests</p>
+
            <div class="contest">
-               <div class="card">
+           <asp:Repeater ID="rptContests" runat="server">
+               <ItemTemplate>
+                   
+    <div class="card">
 
-               </div>
-               
-                <div class="card">
-                     
-           </div>
+         <h3><%#Eval("name") %></h3>
+        <p><strong>State:</strong><%# Eval("state") %></p>
+        <p><strong>Duration:</strong><%# Eval("Contest_duration") %></p>
+        <p><strong>Start Time:</strong><%# Eval("start_time")%></p>
+        <p><strong>Remaining:</strong><%# Eval("remaining_time") %></p>
 
-               <div class="card">
+    </div>
+    
+     
 
-               </div>
-
-               <div class="card">
-
-               </div>
-               <div class="card">
-
-               </div>
-
-               <div class="card">
-
-               </div>
+ 
+               </ItemTemplate>
+           </asp:Repeater>
+                  </div>
 
        </section>
 

@@ -3,7 +3,8 @@
     <link rel="stylesheet" type="text/css" href="style/join.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <div class="join">
+    <div class="container">
+            <div class="join">
         <h1>Join Us</h1>
 <h2>Why Join?</h2>
 <ul>
@@ -13,7 +14,44 @@
 </ul>
     </div>
 
-    <div>
+    <div class="form-container">
+        <div>
+            <label>Full Name</label>
+            <asp:TextBox ID="name" runat="server" CssClass="input"></asp:TextBox>
+
+        </div>
+
+        <div>
+            <label>Email</label>
+            <asp:TextBox ID="email" runat="server" CssClass="input"></asp:TextBox>
+
+        </div>
+
+        <div>
+            <label>
+                Department
+            </label>
+            <asp:TextBox ID="dept" runat="server" CssClass="input"></asp:TextBox>
+        </div>
+           
+           
+
+        <div>
+            <label>Phone Number</label>
+            <asp:TextBox ID="phone" runat="server" CssClass="input" TextMode="Number"></asp:TextBox>
+        </div>
+
+        <div>
+            <label>Set a Password</label>
+            <asp:TextBox ID="password" runat="server" CssClass="input" TextMode="Password"></asp:TextBox>
+        </div>
+
+        <asp:Button ID="submit" runat="server" Text="Submit" CssClass="btn" OnClick="SaveBtn"  />
+        <br />
+        <asp:Label ID="Msg" runat="server" CssClass="message"></asp:Label>
+
+
         
+    </div>
     </div>
 </asp:Content>

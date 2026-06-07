@@ -2,4 +2,264 @@
     height:300px;
     width:60%;
     color:white;
+    border:2px red solid;
+    width:40%;
 }
+
+.container{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+body{
+    width:100%;
+}
+
+
+.form-container {
+    width:100%;
+    max-width:500px;
+    
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:2px red solid;
+}
+
+    
+    .form-container > div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.25rem;
+    }
+
+    
+    .form-container label {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #4a5568;
+        margin-bottom: 0.5rem;
+    }
+
+
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    color: #334155;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+ 
+    .input:hover {
+        border-color: #94a3b8;
+    }
+
+    .input:focus {
+        outline: none;
+        border-color: #3b82f6;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+    }
+
+
+.btn {
+    width: 100%;
+    padding: 0.85rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+    .btn:hover {
+        background-color: #1d4ed8;
+    }
+
+    .btn:active {
+        background-color: #1e40af;
+    }
+
+
+.message {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #dc2626; 
+    font-weight: 500;
+}
+
+
+/* --- Reset & Page Defaults --- */
+/*body {
+    margin: 0;
+    padding: 0;
+    background-color: #030f06;*/ /* Dark background matching your screenshot */
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}*/
+
+/* --- The Layout Wrapper --- */
+/*.container {
+    display: flex;
+    justify-content: space-between;*/ /* Pushes text to the left, form to the right */
+    /*align-items: flex-start;*/ /* Aligns top items across the same line */
+    /*max-width: 1200px;*/ /* Caps how wide the page stretches on large screens */
+    /*margin: 4rem auto;*/ /* Centers the entire layout container on the page */
+    /*padding: 0 2rem;
+    gap: 4rem;*/ /* Clean spacing gap between text and form */
+    /*box-sizing: border-box;
+}*/
+
+/* --- Left Side Content ("Join Us") --- */
+/*.join {
+    flex: 1;*/ /* Allows text block to dynamically occupy remaining space */
+    /*color: #ffffff;
+    padding-top: 1rem;
+}
+
+    .join h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        color: #ffffff;
+    }
+
+    .join h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #cbd5e1;
+        margin-bottom: 1.5rem;
+    }
+
+    .join ul {
+        padding-left: 1.2rem;
+        margin: 0;
+    }
+
+    .join li {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+        color: #94a3b8; 
+    }*/
+
+/* --- Right Side Registration Card --- */
+/*.form-container {
+    width: 100%;
+    max-width: 500px; 
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;*/ /* Essential: keeps padding safely inside the width */
+
+/*}*/
+
+    /* Form layout rows */
+    /*.form-container > div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.25rem;
+    }*/
+
+    /* Text Input Labels */
+    /*.form-container label {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #334155;
+        margin-bottom: 0.5rem;
+    }*/
+
+/* Interactive Text Input Fields */
+/*.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    color: #0f172a;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+    .input:hover {
+        border-color: #94a3b8;
+    }
+
+    .input:focus {
+        outline: none;
+        border-color: #2563eb;
+        background-color: #ffffff;
+        box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+    }*/
+
+/* Submit Action Button */
+/*.btn {
+    width: 100%;
+    padding: 0.85rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    .btn:hover {
+        background-color: #1d4ed8;
+    }
+
+    .btn:active {
+        background-color: #1e40af;
+    }*/
+
+/* Post-submission Response Labels */
+/*.message {
+    display: block;
+    margin-top: 1.25rem;
+    font-size: 0.95rem;
+    text-align: center;
+    font-weight: 500;
+}*/
+
+/* --- Mobile Responsiveness --- */
+/*@media (max-width: 850px) {
+    .container {
+        flex-direction: column; 
+        align-items: stretch;
+        margin: 2rem auto;
+        gap: 2.5rem;
+    }
+
+    .join {
+        text-align: center;
+    }
+
+        .join ul {
+            display: inline-block; 
+            text-align: left;
+        }
+
+    .form-container {
+        max-width: 100%; 
+    }
+}*/

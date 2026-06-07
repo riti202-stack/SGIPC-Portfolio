@@ -7,11 +7,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
     <p>Gallery & Media</p>
     <div class="photos">
-        <div class="p1">
+      <div class="p1">
             <asp:Image ID="imgContest" runat="server" CssClass="card-platform-img" AlternateText="Contest Image" />
         
         <h3>Specific Contest Card</h3>
         <p>This image was fetched directly by its ID.</p>
+          </div>
             
         <div class="sub-photo">
             <div class="p2">
@@ -22,7 +23,7 @@
             </div>
         </div>
 
-    </div>
+    
         </div>
     <div>
         <p>Members of SGIPC</p>

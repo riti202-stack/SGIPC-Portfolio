@@ -137,13 +137,71 @@ hr {
 
 
 
-.card{
+/*.card{
     height:300px;
     width:300px;
     background-color:blanchedalmond;
     border:1px red solid;
     border-radius:10px;
-}
+}*/
+
+
+    /* --- The Card Container --- */
+    .card {
+        width: 340px;
+        min-height: 360px;
+        background-color: #fdf2e2; /* Smooth, soft blanchedalmond alternative */
+        border: 1px solid #d4a373; /* Muted terracotta/red-brown instead of harsh pure red */
+        border-radius: 16px; /* Softer, modern rounded corners */
+        padding: 24px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 14px rgba(212, 163, 115, 0.15); /* Soft, color-matched depth shadow */
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        /* Flexbox Layout to push button to the bottom */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+        /* Optional hover interaction effect */
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(212, 163, 115, 0.25);
+        }
+    /* --- Typography & Details --- */
+    .card-title {
+        color: #1e1e1e;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.4;
+        margin: 0 0 16px 0;
+    }
+
+    
+
+    .card-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Perfect, clean row separation gap */
+        margin-bottom: 20px;
+    }
+
+        .card-details p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #2d2d2d;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-details strong {
+            font-weight: 700;
+            color: #111111;
+            margin-right: 4px;
+        }
+    
+    
+
 
 .heading{
     color:white;

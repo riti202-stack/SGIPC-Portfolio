@@ -38,7 +38,7 @@
 
         <div>
             <label>Phone Number</label>
-            <asp:TextBox ID="phone" runat="server" CssClass="input" TextMode="Number"></asp:TextBox>
+            <asp:TextBox ID="phone" runat="server" CssClass="input" ></asp:TextBox>
         </div>
 
         <div>

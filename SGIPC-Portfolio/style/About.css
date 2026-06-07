@@ -1,47 +1,133 @@
-﻿#about{
-    height:300px;
-    max-width:70%;
-    color:white;
-    font-size:18px;
-    font-weight:800;
-    margin-top:20px;
-    margin-left:20px;
-    
-
+﻿
+body {
+    background-color: #0f172a; /* Deep tech dark blue-gray theme background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+/* --- Top Branding Banner Row --- */
+.banner {
+    color: #ffffff;
+    padding: 60px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+    border-bottom: 1px solid #1e293b;
+}
+
+    .banner h1 {
+        font-size: 2.8rem;
+        margin: 0 0 10px 0;
+        color: #ffffff;
+    }
+
+    .banner h2 {
+        font-size: 1.8rem;
+        color: #eab308; /* Theme primary Yellow highlight */
+        margin: 0;
+        font-weight: 400;
+    }
+
+/* --- Master Two-Column Flex Container Split --- */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.left-column {
+    flex: 1; /* Assigns 50% split width space allocation */
+}
+
+.right-column {
+    flex: 1; /* Assigns 50% split width space allocation */
+}
+
+/* --- Left Column: About Panel Box --- */
 .about-div {
-    border: 2px yellow solid;
-    border-radius: 25px;
-    padding:20px 0px 0px 10px;
-    max-width:70%;
-    height:300px;
+    border: 2px solid #eab308;
+    border-radius: 20px;
+    padding: 35px;
+    background-color: #1e293b;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-#heading{
-    color:white;
-    margin-left:20px;
-
+#heading {
+    color: #eab308;
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
-.banner{
-    color:yellow;
-    margin-left:20px;
-    height:200px;
-    max-width:100%;
-    align-content:center;
-    
+#about {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0;
 }
 
-
-
+/* --- Right Column: Mission Core Dashboard --- */
+/* --- Mission and Vision Container --- */
 .mission-div {
-    color: white;
-    height: 400px;
-    width: 70%;
-    margin-left: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 15px 30px;
+    background-color: #0f172a; /* Deep dark background matching your theme */
+    color: #ffffff; /* Forces overall text default to white */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* --- Section Heading ("Mission and Vission") --- */
+#mission-head {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1e293b; /* Premium underlying divider line */
+    padding-bottom: 10px;
+}
 
+/* --- Individual Mission Block Settings --- */
+.mission {
+    margin-bottom: 35px; /* Adds healthy breathing room between different points */
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Sets space between header row and descriptive paragraph */
+}
+
+    /* --- Mission Title Sub-Headers (e.g., "Cultivating Competitive Excellence") --- */
+    .mission > div:first-child p {
+        color: #eab308; /* High-contrast yellow/gold for standout feature accents */
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin: 0;
+        display: flex;
+        align-items: center; /* Vertically aligns the pointer icon with text center */
+        gap: 10px; /* Pushes text away from the icon wrapper link */
+    }
+
+    /* Target the FontAwesome Pointer Icons specifically */
+    .mission .fa-hand-pointer {
+        color: #eab308; /* Matches accent title color */
+        font-size: 1.1rem;
+    }
+
+    /* --- Mission Description Paragraphs --- */
+    .mission > div:last-child p {
+        color: #cbd5e1; /* Highly readable light gray-blue text (Excellent contrast on dark backgrounds) */
+        font-size: 1.05rem;
+        line-height: 1.6; /* Gives paragraph lines comfortable line-spacing */
+        margin: 0;
+        padding-left: 28px; /* Indents description text cleanly underneath the header */
+    }
+
+/* --- Media Query Breakpoint to support Mobile Responsiveness --- */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column; /* Shifts layouts smoothly into vertical stacks on smaller screens */
+        gap: 30px;
+    }
+}

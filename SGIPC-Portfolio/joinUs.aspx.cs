@@ -47,6 +47,7 @@ namespace SGIPC_Portfolio
                 name.Text = "";
                 email.Text = "";
                 dept.Text = "";
+                phone.Text = "";
                 Msg.CssClass = "message";
                 Msg.Text = "You have submitted successfully";
             }

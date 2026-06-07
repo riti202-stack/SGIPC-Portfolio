@@ -40,9 +40,8 @@
     </form>
     
 </body>
-    
-</html>
-<footer class="footer">
+
+    <footer class="footer">
     <div class="footer-links">
         <div cssClass="footer-div">
     <p class="footer-head">About SGIPC</p>
@@ -89,3 +88,6 @@
 
 
 </footer>
+
+    
+</html>

@@ -12,31 +12,10 @@
 <p class="txt">Solving The Unsolvable</p>
            </div>
 
-           <div id="mid-img">
-               <img   src="../image/terminal.png" style="height:200px; width:400px" />
-           </div>
+          
 
        </div>
-       <section class="impact-section">
-           <p class="heading">Impact at a Glance</p>
-           <div class="impact">
-               <div>
-                   <p>Active Members</p>
-<p>400+</p>
-               </div>
-               <hr />
-               <div>
-                   <p>National Rank</p>
-<p>13th</p>
-               </div>
-               <hr />
-               <div>
-                   <p>500K+</p>
-<p>Solved Problems</p>
-               </div>
-           </div>
-       </section>
-
+       
        <section class="card-section" id="view-contest">
            <p class="heading">Active Contests</p>
 

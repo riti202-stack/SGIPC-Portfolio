@@ -8,8 +8,11 @@
     <p>Gallery & Media</p>
     <div class="photos">
         <div class="p1">
-            <img src="image/p1.png" style="height:600px; width:100%" />
-</div>
+            <asp:Image ID="imgContest" runat="server" CssClass="card-platform-img" AlternateText="Contest Image" />
+        
+        <h3>Specific Contest Card</h3>
+        <p>This image was fetched directly by its ID.</p>
+            
         <div class="sub-photo">
             <div class="p2">
     <img src="../image/p2.png" style="height:300px; width:100%" />
@@ -17,6 +20,70 @@
             <div class="p3">
                 <img src="../image/p3.jpg" style="height:300px; width:100%" />
             </div>
+        </div>
+
+    </div>
+        </div>
+    <div>
+        <p>Members of SGIPC</p>
+        <p>President</p>
+        <div class="mem">
+            
+            <div class="mem-card">
+
+            </div>
+
+        </div>
+        <p>Vice-President</p>
+        <div class="mem">
+            
+            <div class="mem-card">
+
+            </div>
+            <div class="mem-card">
+
+            </div>
+
+        </div>
+         <p>General Secratary</p>
+        <div class="mem">
+           
+            <div class="mem-card">
+
+            </div>
+
+        </div>
+        <p>Assistant General Secretary</p>
+        <div class="mem">
+            
+            <div class="mem-card">
+
+            </div>
+            <div class="mem-card">
+
+            </div>
+
+        </div>
+        <p>Tresurer</p>
+        <div class="mem">
+            
+            <div class="mem-card">
+
+            </div>
+
+        </div>
+         <p>Organizing Secretery</p>
+        <div class="mem">
+           
+            <div class="mem-card">
+
+            </div>
+
+        </div>
+        <p>Editorial Manager</p>
+        <div class="mem">
+            
+
         </div>
 
     </div>

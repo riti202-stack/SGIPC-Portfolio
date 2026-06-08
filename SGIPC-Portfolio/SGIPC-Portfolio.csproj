@@ -118,6 +118,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="dashboard.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -126,8 +127,11 @@
     <Content Include="image\p3.jpg" />
     <Content Include="image\spark.png" />
     <Content Include="image\terminal.png" />
+    <Content Include="image_data.aspx" />
     <Content Include="index.aspx" />
     <Content Include="joinUs.aspx" />
+    <Content Include="Member.aspx" />
+    <Content Include="newMember.aspx" />
     <Content Include="resource.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -188,6 +192,7 @@
     <Content Include="Site.Master" />
     <Content Include="image\p1.png" />
     <Content Include="style\About.css" />
+    <Content Include="style\dashboard.css" />
     <Content Include="style\join.css" />
     <Content Include="style\site.css" />
     <Content Include="style\gallery.css" />
@@ -213,6 +218,13 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,6 +234,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="image_data.aspx.cs">
+      <DependentUpon>image_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="image_data.aspx.designer.cs">
+      <DependentUpon>image_data.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -236,6 +255,20 @@
     </Compile>
     <Compile Include="joinUs.aspx.designer.cs">
       <DependentUpon>joinUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member.aspx.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member.aspx.designer.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="newMember.aspx.cs">
+      <DependentUpon>newMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newMember.aspx.designer.cs">
+      <DependentUpon>newMember.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="resource.aspx.cs">

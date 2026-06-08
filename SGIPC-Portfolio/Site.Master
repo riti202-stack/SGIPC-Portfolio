@@ -25,7 +25,7 @@
                 <li class="link"><a href="About.aspx">About</a></li>
                 <li class="link"><a href="gallery.aspx">Gallery</a></li>
                 <li class="link"><a  href="index.aspx#view-contest">Contests</a></li>
-                <li  class="link"><a>Resources</a></li>
+                <li  class="link"><a href="resource.aspx">Resources</a></li>
                 <li class="link"><a href="joinUs.aspx">join</a></li>
             </ul>
         </div>

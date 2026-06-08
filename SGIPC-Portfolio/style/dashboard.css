@@ -1,0 +1,16 @@
+﻿.dashboard {
+    text-align: center;
+    margin: 2.2rem;
+}
+
+.dashboard a {
+        width: 100%;
+        border: 2px yellow solid;
+        background-color: chartreuse;
+        max-width: 200px;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 0.25rem;
+        padding: 1rem;
+        font-weight: 800;
+    }

@@ -14,3 +14,179 @@
         padding: 1rem;
         font-weight: 800;
     }
+
+
+/* Dashboard Wrapper Container */
+.dashboard-container {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 650px;
+    box-sizing: border-box;
+}
+
+/* Typography headers */
+h2 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #444444;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Welcome Section Box */
+.welcome-panel {
+    background-color: #e9ecef;
+    border-left: 5px solid #007bff;
+    padding: 15px 20px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 25px;
+}
+
+    /* Individual status labels inside the welcome panel */
+    .welcome-panel span {
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px 0;
+    }
+
+#WelcomeLabel {
+    font-weight: bold;
+    font-size: 18px;
+    color: #0056b3;
+}
+
+#LoginTimeLabel {
+    color: #666666;
+    font-style: italic;
+}
+
+/* Cookie Management Segment Card */
+.cookie-panel {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+    .cookie-panel label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #555555;
+        margin-bottom: 10px;
+    }
+
+/* Input Fields styling */
+.input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .input:focus {
+        border-color: #28a745; /* Green focus highlight for operations */
+        box-shadow: 0 0 5px rgba(40, 167, 69, 0.25);
+        outline: none;
+    }
+
+/* Button Action Layout Group */
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Base button styling overriding native Web Forms inputs */
+.btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    color: #ffffff;
+    background-color: #007bff; /* Default Set Cookie color: Blue */
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .btn:active {
+        transform: scale(0.98);
+    }
+
+/* Secondary Button (Access Cookie: Grey) */
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+    }
+
+/* Danger Button (Delete Cookie: Red) */
+.btn-danger {
+    background-color: #dc3545;
+}
+
+    .btn-danger:hover {
+        background-color: #bd2130;
+    }
+
+/* Action Status Label Box */
+.message {
+    display: block;
+    margin: 15px 0;
+    padding: 12px;
+    background-color: #e2f0d9;
+    color: #385723;
+    border: 1px solid #c5e0b4;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Logout Actions Section Wrapper */
+.logout-section {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 2px solid #eaeaea;
+    text-align: right;
+}
+
+/* Dedicated Logout Button Styling */
+.btn-logout {
+    padding: 10px 20px;
+    background-color: #343a40;
+    color: #ffffff;
+    border: 1px solid #343a40;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+    .btn-logout:hover {
+        background-color: transparent;
+        color: #343a40;
+    }

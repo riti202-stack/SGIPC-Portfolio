@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
-using System.Dynamic;
+
 
 namespace SGIPC_Portfolio
 {

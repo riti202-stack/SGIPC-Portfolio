@@ -16,7 +16,7 @@
 
        </div>
 
-       <p id="dashboard-btn"><a href="dashboard.aspx">Dashboard for admin</a></p>
+       <p id="dashboard-btn"><a href="login.aspx">Dashboard for admin</a></p>
        
        <section class="card-section" id="view-contest">
            <p class="heading">Active Contests</p>

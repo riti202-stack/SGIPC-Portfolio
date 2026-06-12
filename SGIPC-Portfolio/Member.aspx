@@ -4,6 +4,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
 
+    <h1>Show Data</h1>
+    <p><a  href="AddMember.aspx">Insert Member</a></p>
+
     <asp:Label ID="MsgLabel" runat="server" CssClass="message"></asp:Label>
      <asp:GridView ID="memberview" runat="server" CssClass="table" AutoGenarateColumns="false" OnRowCommand="memberview_rowcommand">
 

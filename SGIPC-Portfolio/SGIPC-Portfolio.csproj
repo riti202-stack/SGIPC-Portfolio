@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AddMember.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -130,6 +131,8 @@
     <Content Include="image_data.aspx" />
     <Content Include="index.aspx" />
     <Content Include="joinUs.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="logout.aspx" />
     <Content Include="Member.aspx" />
     <Content Include="newMember.aspx" />
     <Content Include="resource.aspx" />
@@ -194,6 +197,7 @@
     <Content Include="style\About.css" />
     <Content Include="style\dashboard.css" />
     <Content Include="style\join.css" />
+    <Content Include="style\login.css" />
     <Content Include="style\Member.css" />
     <Content Include="style\site.css" />
     <Content Include="style\gallery.css" />
@@ -204,6 +208,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddMember.aspx.cs">
+      <DependentUpon>AddMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMember.aspx.designer.cs">
+      <DependentUpon>AddMember.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -258,6 +269,20 @@
     <Compile Include="joinUs.aspx.designer.cs">
       <DependentUpon>joinUs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Member.aspx.cs">
       <DependentUpon>Member.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -280,6 +305,7 @@
     <Compile Include="resource.aspx.designer.cs">
       <DependentUpon>resource.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SecurityHelper.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -30,59 +30,113 @@
         <p>President</p>
         <div class="mem">
             
-            <div class="mem-card">
+            <asp:Repeater ID="RepeaterPresident" runat="server">
+                <ItemTemplate>
+                    <div class="mem-card">
+                        <h3><%# Eval("name") %></h3>
+                        <p><%# Eval("roll") %></p>
+                        <p><%# Eval("TFC_rating") %></p>
+                        <p><%# Eval("CF_rating") %></p>
 
-            </div>
+
+</div>
+                </ItemTemplate>
+            </asp:Repeater>
 
         </div>
         <p>Vice-President</p>
         <div class="mem">
             
-            <div class="mem-card">
+            <asp:Repeater ID="RepeaterVicePresident" runat="server">
+                <ItemTemplate>
+                     <div class="mem-card">
+                        <h3><%# Eval("name") %></h3>
+                        <p><%# Eval("roll") %></p>
+                        <p><%# Eval("TFC_rating") %></p>
+                        <p><%# Eval("CF_rating") %></p>
 
-            </div>
-            <div class="mem-card">
 
-            </div>
+</div>
+
+                </ItemTemplate>
+            </asp:Repeater>
 
         </div>
          <p>General Secratary</p>
         <div class="mem">
            
-            <div class="mem-card">
-
-            </div>
+           
 
         </div>
         <p>Assistant General Secretary</p>
         <div class="mem">
             
-            <div class="mem-card">
+                        <asp:Repeater ID="RepeaterGS" runat="server">
+                <ItemTemplate>
+                     <div class="mem-card">
+                        <h3><%# Eval("name") %></h3>
+                        <p><%# Eval("roll") %></p>
+                        <p><%# Eval("TFC_rating") %></p>
+                        <p><%# Eval("CF_rating") %></p>
 
-            </div>
-            <div class="mem-card">
 
-            </div>
+</div>
+
+                </ItemTemplate>
+            </asp:Repeater>
 
         </div>
         <p>Tresurer</p>
         <div class="mem">
             
-            <div class="mem-card">
+                        <asp:Repeater ID="RepeaterTresurer" runat="server">
+                <ItemTemplate>
+                     <div class="mem-card">
+                        <h3><%# Eval("name") %></h3>
+                        <p><%# Eval("roll") %></p>
+                        <p><%# Eval("TFC_rating") %></p>
+                        <p><%# Eval("CF_rating") %></p>
 
-            </div>
+
+</div>
+
+                </ItemTemplate>
+            </asp:Repeater>
 
         </div>
          <p>Organizing Secretery</p>
         <div class="mem">
            
-            <div class="mem-card">
+                       <asp:Repeater ID="RepeaterOS" runat="server">
+                <ItemTemplate>
+                     <div class="mem-card">
+                        <h3><%# Eval("name") %></h3>
+                        <p><%# Eval("roll") %></p>
+                        <p><%# Eval("TFC_rating") %></p>
+                        <p><%# Eval("CF_rating") %></p>
 
-            </div>
+
+</div>
+
+                </ItemTemplate>
+            </asp:Repeater>
 
         </div>
         <p>Editorial Manager</p>
         <div class="mem">
+                        <asp:Repeater ID="RepeaterEM" runat="server">
+                <ItemTemplate>
+                     <div class="mem-card">
+                        <h3><%# Eval("name") %></h3>
+                        <p><%# Eval("roll") %></p>
+                        <p><%# Eval("TFC_rating") %></p>
+                        <p><%# Eval("CF_rating") %></p>
+
+
+</div>
+
+                </ItemTemplate>
+            </asp:Repeater>
             
 
         </div>

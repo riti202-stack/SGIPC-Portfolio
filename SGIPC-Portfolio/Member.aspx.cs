@@ -57,7 +57,7 @@ namespace SGIPC_Portfolio
 
             if(e.CommandName=="editRecord")
             {
-                Response.Redirect("UpdateMember.aspx?roll" + roll);
+                Response.Redirect("UpdateMember.aspx?roll=" + roll);
             }
 
             else if(e.CommandName=="deleteRecord")

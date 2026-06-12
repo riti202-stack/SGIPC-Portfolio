@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.SqlClient;
 
 namespace SGIPC_Portfolio
 {
@@ -18,8 +19,9 @@ namespace SGIPC_Portfolio
         {
         if (!IsPostBack)
         {
-            // Fetch the image with ID = 1 when the page loads
+          
             FetchImageById(1);
+            BindExecuteTeam();
         }
 
     }
@@ -27,7 +29,7 @@ namespace SGIPC_Portfolio
     {
         using (SqlConnection conn = new SqlConnection(connString))
         {
-            // Query targeted specifically to find one row
+           
             string query = "SELECT img FROM image WHERE id = @id";
 
             using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -35,35 +37,75 @@ namespace SGIPC_Portfolio
                 cmd.Parameters.AddWithValue("@id", imageId);
 
                 conn.Open();
-                object result = cmd.ExecuteScalar(); // ExecuteScalar fetches the single first column value
+                object result = cmd.ExecuteScalar(); 
 
                 if (result != null && result != DBNull.Value)
                 {
                     string fullPath = result.ToString();
 
-                    // Convert Windows absolute path (D:\...) safely to relative path logic if needed,
-                    // or handle it directly if you stored it as '~/image/p1.png'
+                    
                     if (fullPath.Contains("image\\"))
                     {
-                        // Extracts "image/p1.png" from the deep disk hierarchy string
+                        
                         string relativePart = fullPath.Substring(fullPath.IndexOf("image\\")).Replace("\\", "/");
                         imgContest.ImageUrl = "~/" + relativePart;
                     }
                     else
                     {
-                        // Fallback straight mapping if stored cleanly as a web relative path
+                        
                         imgContest.ImageUrl = fullPath;
                     }
                 }
                 else
                 {
-                    // Fallback placeholder image if ID is missing in database row
+                    
                     imgContest.ImageUrl = "~/image/default-contest.png";
                 }
             }
         }
     }
-}
+
+        private void BindExecuteTeam()
+        {
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+
+                string queryPresident = "Select name,roll,TFC_rating,CF_rating from Member Where roll = '2007086'";
+                BindRepeater(RepeaterPresident, queryPresident, conn);
+
+                string queryVP = "SELECT name, roll, TFC_rating,CF_rating from Member Where roll = '2007016'";
+                BindRepeater(RepeaterVicePresident, queryVP, conn);
+
+                string queryGS = "SELECT name, roll, TFC_rating,CF_rating from Member Where roll = '2007102'";
+                BindRepeater(RepeaterGS, queryGS, conn);
+
+                string queryTresurer = "SELECT name, roll, TFC_rating,CF_rating from Member Where roll = '2107076'";
+                BindRepeater(RepeaterTresurer, queryTresurer, conn);
+
+                
+            }
+        }
+
+        private void BindRepeater(System.Web.UI.WebControls.Repeater repeater,string SqlQuery,SqlConnection conn)
+        {
+            using (SqlCommand cmd = new SqlCommand(SqlQuery, conn))
+            {
+                using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
+                {
+                    DataTable dt = new DataTable();
+                    sda.Fill(dt);
+                    repeater.DataSource = dt;
+                    repeater.DataBind();
+                }
+            }
+
+        }
+
+        
+        }
+        }
 
 
-    }
+
+    

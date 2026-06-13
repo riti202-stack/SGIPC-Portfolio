@@ -19,28 +19,29 @@
        <p id="dashboard-btn"><a href="login.aspx">Dashboard for admin</a></p>
        
        <section class="card-section" id="view-contest">
-           <p class="heading">Active Contests</p>
+           <p class="heading">Practice Contests</p>
 
            <div class="contest">
-           <asp:Repeater ID="rptContests" runat="server">
-               <ItemTemplate>
-                   
-    <div class="card">
-
-         <h3><%#Eval("name") %></h3>
-        <p><strong>State:</strong><%# Eval("state") %></p>
-        <p><strong>Duration:</strong><%# Eval("Contest_duration") %></p>
-        <p><strong>Start Time:</strong><%# Eval("start_time")%></p>
-        <p><strong>Remaining:</strong><%# Eval("remaining_time") %></p>
-
-    </div>
-    
-     
-
- 
-               </ItemTemplate>
-           </asp:Repeater>
-                  </div>
+    <asp:Repeater ID="rptContests" runat="server">
+        <ItemTemplate>
+            <div class="card">
+                <h3><%# Eval("name") %></h3>
+           
+                <div class="contest-details">
+                    
+                    <p><strong>Duration:</strong> <%# Eval("Contest_duration") %></p>
+                    
+                </div>
+                
+                <a href='<%# "https://codeforces.com/contest/" + Eval("id") %>' 
+                   target="_blank" 
+                   class="contest-link">
+                   View Details / Register
+                </a>
+            </div>
+        </ItemTemplate>
+    </asp:Repeater>
+</div>
 
        </section>
 

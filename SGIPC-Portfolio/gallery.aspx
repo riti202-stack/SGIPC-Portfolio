@@ -5,13 +5,12 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-    <p>Gallery & Media</p>
+    <p class="gallery">Gallery & Media</p>
     <div class="photos">
       <div class="p1">
             <asp:Image ID="imgContest" runat="server" CssClass="card-platform-img" AlternateText="Contest Image" />
         
-        <h3>Specific Contest Card</h3>
-        <p>This image was fetched directly by its ID.</p>
+        
           </div>
             
         <div class="sub-photo">
@@ -26,8 +25,8 @@
     
         </div>
     <div>
-        <p>Members of SGIPC</p>
-        <p>President</p>
+        <p class="gallery" >Members of SGIPC</p>
+        <p class="role">President</p>
         <div class="mem">
             
             <asp:Repeater ID="RepeaterPresident" runat="server">
@@ -47,7 +46,7 @@
             </asp:Repeater>
 
         </div>
-        <p>Vice-President</p>
+        <p class="role">Vice-President</p>
         <div class="mem">
             
             <asp:Repeater ID="RepeaterVicePresident" runat="server">
@@ -68,7 +67,7 @@
             </asp:Repeater>
 
         </div>
-         <p>General Secratary</p>
+         <p class="role">General Secratary</p>
         <div class="mem">
                         <asp:Repeater ID="RepeaterGS" runat="server">
                 <ItemTemplate>
@@ -91,15 +90,15 @@
            
 
         </div>
-        <p>Assistant General Secretary</p>
+        <p class="role">Assistant General Secretary</p>
         <div class="mem">
             
                         <asp:Repeater ID="RepeaterAGS" runat="server">
                 <ItemTemplate>
                      <div class="mem-card">
                          <img src='<%# ResolveUrl("~/image/"+Eval("image").ToString()) %>' 
- alt='<%# Eval("name") %>' 
-   class="mem-img" />
+                       alt='<%# Eval("name") %>' 
+                  class="mem-img" />
                         <h3><%# Eval("name") %></h3>
                         <p><%# Eval("roll") %></p>
                         <p><%# Eval("TFC_rating") %></p>
@@ -112,7 +111,7 @@
             </asp:Repeater>
 
         </div>
-        <p>Tresurer</p>
+        <p class="role">Tresurer</p>
         <div class="mem">
             
                         <asp:Repeater ID="RepeaterTresurer" runat="server">
@@ -133,7 +132,7 @@
             </asp:Repeater>
 
         </div>
-         <p>Organizing Secretery</p>
+         <p class="role">Organizing Secretery</p>
         <div class="mem">
            
                        <asp:Repeater ID="RepeaterOS" runat="server">
@@ -154,7 +153,7 @@
             </asp:Repeater>
 
         </div>
-        <p>Editorial Manager</p>
+        <p class="role">Editorial Manager</p>
         <div class="mem">
                         <asp:Repeater ID="RepeaterEM" runat="server">
                 <ItemTemplate>
@@ -175,6 +174,23 @@
             
 
         </div>
+
+        <h2 class="role">Other Members</h2>
+    <div class="mem-others">
+        <asp:Repeater ID="RepeaterMembers" runat="server">
+            <ItemTemplate>
+                <div class="mem-card">
+                                           <img src='<%# ResolveUrl("~/image/"+Eval("image").ToString()) %>' 
+alt='<%# Eval("name") %>' 
+  class="mem-img" />
+                       <h3><%# Eval("name") %></h3>
+                       <p><%# Eval("roll") %></p>
+                       <p><%# Eval("TFC_rating") %></p>
+                       <p><%# Eval("CF_rating") %></p>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
 
     </div>
 </asp:Content>

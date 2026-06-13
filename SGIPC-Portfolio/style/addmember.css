@@ -1,0 +1,98 @@
+﻿
+/* Container Box framing the creation form */
+.form-container {
+    max-width: 450px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border: 1px solid #e2e8f0;
+}
+
+    /* Header design matching the card width */
+    .form-container h2 {
+        color: #1a202c;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 10px;
+    }
+
+/* Individual form row segments wrapping labels and inputs */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+    /* Form block text label definitions */
+    .form-group label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #4a5568;
+        margin-bottom: 6px;
+    }
+
+/* Textbox Inputs Control Styling */
+.form-container .input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #2d3748;
+    background-color: #fff;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    box-sizing: border-box; /* Crucial to keep width at exactly 100% */
+    transition: all 0.2s ease-in-out;
+}
+
+    /* Focus illumination highlight when selecting an input field */
+    .form-container .input:focus {
+        border-color: #3182ce;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+    }
+
+/* The footer section layout balancing actions side-by-side */
+.form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+/* Save Member Action Button Styling */
+.form-container .btn {
+    background-color: #3182ce; /* Corporate Blue primary action */
+    color: #ffffff;
+    border: none;
+    padding: 11px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    .form-container .btn:hover {
+        background-color: #2b6cb0;
+    }
+
+/* Back To List Anchor Link Styling mapped as a cancel indicator */
+.back-link {
+    color: #718096;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+    .back-link:hover {
+        color: #4a5568;
+        text-decoration: underline;
+    }

@@ -80,10 +80,20 @@ namespace SGIPC_Portfolio
                 string queryGS = "SELECT name, roll, TFC_rating,CF_rating,image from Member Where roll = '2007102'";
                 BindRepeater(RepeaterGS, queryGS, conn);
 
-                string queryTresurer = "SELECT name, roll, TFC_rating,CF_rating,image from Member Where roll = '2107076'";
+                string queryAGS = "SELECT name, roll, TFC_rating,CF_rating,image from Member Where roll = '2107002'";
+                BindRepeater(RepeaterAGS, queryAGS, conn);
+
+                string queryTresurer = "SELECT name, roll, TFC_rating,CF_rating,image from Member Where roll = '2207043'";
                 BindRepeater(RepeaterTresurer, queryTresurer, conn);
 
-                
+                string queryOS = "SELECT name, roll, TFC_rating,CF_rating,image from Member Where roll = '2007068'";
+                BindRepeater(RepeaterOS, queryOS, conn);
+
+                string queryEM = "SELECT name, roll, TFC_rating,CF_rating,image from Member Where roll = '2007044'";
+                BindRepeater(RepeaterEM, queryEM, conn);
+
+                string queryOthers = "SELECT name,roll,TFC_rating,CF_rating,image FROM Member WHERE roll NOT IN ('2007086', '2007016','2007102','2007002','2207043','2007068','2007044')";
+                BindRepeater(RepeaterMembers, queryOthers, conn);
             }
         }
 

@@ -1,0 +1,159 @@
+﻿
+
+
+.resource-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: #2d3748;
+}
+
+
+.resource-header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+    .resource-header h1 {
+        font-size: 2.2rem;
+        color: #1a202c;
+        margin-bottom: 8px;
+    }
+
+    .resource-header p {
+        color: #718096;
+        font-size: 1.1rem;
+    }
+
+
+.section-title {
+    font-size: 1.4rem;
+    color: #2d3748;
+    margin: 40px 0 20px 0;
+    font-weight: 600;
+    border-left: 4px solid #3182ce; 
+    padding-left: 12px;
+}
+
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+
+.resource-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .resource-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(49, 130, 206, 0.08);
+        border-color: #cbd5e0;
+    }
+
+  
+    .resource-card h3 {
+        font-size: 1.2rem;
+        color: #1a202c;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .resource-card p {
+        font-size: 0.95rem;
+        color: #4a5568;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+
+.tag-container {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+    .tag.easy {
+        background: #e6fffa;
+        color: #234e52;
+    }
+
+    .tag.medium {
+        background: #feebc8;
+        color: #744210;
+    }
+
+    .tag.hard {
+        background: #fed7d7;
+        color: #742a2a;
+    }
+
+    .tag.platform {
+        background: #ebf8ff;
+        color: #2b6cb0;
+    }
+
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3182ce; 
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+    .card-link:hover {
+        background-color: #2b6cb0;
+    }
+
+.curriculum-card {
+    justify-content: flex-start; 
+}
+
+    .curriculum-card p {
+        font-style: italic;
+        color: #718096;
+        margin-bottom: 12px;
+    }
+
+
+.topic-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+    .topic-list li {
+        font-size: 0.9rem;
+        color: #4a5568;
+        margin-bottom: 6px;
+        line-height: 1.4;
+    }

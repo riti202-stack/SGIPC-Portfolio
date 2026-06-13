@@ -212,10 +212,12 @@
     <Content Include="Site.Master" />
     <Content Include="image\p1.png" />
     <Content Include="style\About.css" />
+    <Content Include="style\addmember.css" />
     <Content Include="style\dashboard.css" />
     <Content Include="style\join.css" />
     <Content Include="style\login.css" />
     <Content Include="style\Member.css" />
+    <Content Include="style\resource.css" />
     <Content Include="style\site.css" />
     <Content Include="style\gallery.css" />
     <Content Include="UpdateMember.aspx" />

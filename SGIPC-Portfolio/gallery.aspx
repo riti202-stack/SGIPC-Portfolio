@@ -33,6 +33,9 @@
             <asp:Repeater ID="RepeaterPresident" runat="server">
                 <ItemTemplate>
                     <div class="mem-card">
+                        <img src='<%# ResolveUrl("~/image/"+Eval("image").ToString()) %>' 
+                          alt='<%# Eval("name") %>' 
+                            class="mem-img" />
                         <h3><%# Eval("name") %></h3>
                         <p><%# Eval("roll") %></p>
                         <p><%# Eval("TFC_rating") %></p>
@@ -50,6 +53,9 @@
             <asp:Repeater ID="RepeaterVicePresident" runat="server">
                 <ItemTemplate>
                      <div class="mem-card">
+                         <img src='<%# ResolveUrl("~/image/"+Eval("image").ToString()) %>' 
+                          alt='<%# Eval("name") %>' 
+                            class="mem-img" />
                         <h3><%# Eval("name") %></h3>
                         <p><%# Eval("roll") %></p>
                         <p><%# Eval("TFC_rating") %></p>
@@ -64,6 +70,23 @@
         </div>
          <p>General Secratary</p>
         <div class="mem">
+                        <asp:Repeater ID="RepeaterGS" runat="server">
+                <ItemTemplate>
+                     <div class="mem-card">
+                         <img src='<%# ResolveUrl("~/image/"+Eval("image").ToString()) %>' 
+                          alt='<%# Eval("name") %>' 
+                            class="mem-img" />
+                        <h3><%# Eval("name") %></h3>
+                        <p><%# Eval("roll") %></p>
+                        <p><%# Eval("TFC_rating") %></p>
+                        <p><%# Eval("CF_rating") %></p>
+
+
+</div>
+
+                </ItemTemplate>
+            </asp:Repeater>
+
            
            
 
@@ -71,9 +94,12 @@
         <p>Assistant General Secretary</p>
         <div class="mem">
             
-                        <asp:Repeater ID="RepeaterGS" runat="server">
+                        <asp:Repeater ID="RepeaterAGS" runat="server">
                 <ItemTemplate>
                      <div class="mem-card">
+                         <img src='<%# ResolveUrl("~/image/"+Eval("image").ToString()) %>' 
+ alt='<%# Eval("name") %>' 
+   class="mem-img" />
                         <h3><%# Eval("name") %></h3>
                         <p><%# Eval("roll") %></p>
                         <p><%# Eval("TFC_rating") %></p>
@@ -92,6 +118,9 @@
                         <asp:Repeater ID="RepeaterTresurer" runat="server">
                 <ItemTemplate>
                      <div class="mem-card">
+                         <img src='<%# ResolveUrl("~/image/"+Eval("image").ToString()) %>' 
+ alt='<%# Eval("name") %>' 
+   class="mem-img" />
                         <h3><%# Eval("name") %></h3>
                         <p><%# Eval("roll") %></p>
                         <p><%# Eval("TFC_rating") %></p>
@@ -110,6 +139,9 @@
                        <asp:Repeater ID="RepeaterOS" runat="server">
                 <ItemTemplate>
                      <div class="mem-card">
+                         <img src='<%# ResolveUrl("~/image/"+Eval("image").ToString()) %>' 
+ alt='<%# Eval("name") %>' 
+   class="mem-img" />
                         <h3><%# Eval("name") %></h3>
                         <p><%# Eval("roll") %></p>
                         <p><%# Eval("TFC_rating") %></p>
@@ -127,6 +159,9 @@
                         <asp:Repeater ID="RepeaterEM" runat="server">
                 <ItemTemplate>
                      <div class="mem-card">
+                         <img src='<%# ResolveUrl("~/image/"+Eval("image").ToString()) %>' 
+ alt='<%# Eval("name") %>' 
+   class="mem-img" />
                         <h3><%# Eval("name") %></h3>
                         <p><%# Eval("roll") %></p>
                         <p><%# Eval("TFC_rating") %></p>

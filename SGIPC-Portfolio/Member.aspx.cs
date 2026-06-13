@@ -63,7 +63,7 @@ namespace SGIPC_Portfolio
             else if(e.CommandName=="deleteRecord")
             {
                 DeleteMember(roll);
-                LoadMembers();
+                //LoadMembers();
             }
         }
 

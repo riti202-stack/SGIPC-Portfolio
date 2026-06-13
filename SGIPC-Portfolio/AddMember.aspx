@@ -23,6 +23,8 @@
         <asp:TextBox ID="cf_rating" runat="server" CssClass="input"></asp:TextBox>
     </div>
 
+
+
     <asp:Button ID="SaveBtn" runat="server" Text="Save Member" CssClass="btn" OnClick="SaveButton" />
     <a href="Member.aspx">Back To List</a>
 

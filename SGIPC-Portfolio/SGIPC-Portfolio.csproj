@@ -123,16 +123,33 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="image\Amit_kairy.jpg" />
+    <Content Include="image\asif_rahman.jpg" />
+    <Content Include="image\Daud_sharif.jpg" />
+    <Content Include="image\Dipra_Datta.jpg" />
+    <Content Include="image\Farhan_ishraq.jpg" />
+    <Content Include="image\Faysal.jpg" />
     <Content Include="image\footer.png" />
+    <Content Include="image\K.I_mahi.jpg" />
+    <Content Include="image\Niloy_Das.jpg" />
+    <Content Include="image\Niyamul_kabir.jpg" />
     <Content Include="image\p2.png" />
     <Content Include="image\p3.jpg" />
+    <Content Include="image\Rifat_Al_Muin.jpg" />
+    <Content Include="image\Sanjidur_rahman.jpg" />
+    <Content Include="image\Sazzad_ahmed.jpg" />
+    <Content Include="image\Shahira_Alima.jpg" />
+    <Content Include="image\Shormi.jpg" />
     <Content Include="image\spark.png" />
+    <Content Include="image\Sumaiya_Rahim.jpg" />
+    <Content Include="image\Tahmid_albi.jpg" />
+    <Content Include="image\Tawhidul.jpg" />
     <Content Include="image\terminal.png" />
+    <Content Include="image\Umar_Faruk.jpg" />
     <Content Include="image_data.aspx" />
     <Content Include="index.aspx" />
     <Content Include="joinUs.aspx" />
     <Content Include="login.aspx" />
-    <Content Include="logout.aspx" />
     <Content Include="Member.aspx" />
     <Content Include="newMember.aspx" />
     <Content Include="resource.aspx" />
@@ -275,13 +292,6 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="logout.aspx.cs">
-      <DependentUpon>logout.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="logout.aspx.designer.cs">
-      <DependentUpon>logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Member.aspx.cs">
       <DependentUpon>Member.aspx</DependentUpon>

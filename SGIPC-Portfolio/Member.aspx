@@ -8,7 +8,7 @@
     <p><a  href="AddMember.aspx">Insert Member</a></p>
 
     <asp:Label ID="MsgLabel" runat="server" CssClass="message"></asp:Label>
-     <asp:GridView ID="memberview" runat="server" CssClass="table" AutoGenarateColumns="false" OnRowCommand="memberview_rowcommand">
+     <asp:GridView ID="memberview" runat="server" CssClass="table" AutoGenerateColumns="false" OnRowCommand="memberview_rowcommand">
 
          <Columns>
 
@@ -16,6 +16,7 @@
              <asp:BoundField DataField="roll" HeaderText="Roll" />
              <asp:BoundField DataField="TFC_rating" HeaderText="TFC_Rating" />
              <asp:BoundField DataField="CF_rating" HeaderText="CF_Max_Rating" />
+             
 
 
              <asp:TemplateField HeaderText="Actions">

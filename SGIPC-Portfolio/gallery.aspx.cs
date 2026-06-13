@@ -71,16 +71,16 @@ namespace SGIPC_Portfolio
             {
                 conn.Open();
 
-                string queryPresident = "Select name,roll,TFC_rating,CF_rating from Member Where roll = '2007086'";
+                string queryPresident = "Select name,roll,TFC_rating,CF_rating,image from Member Where roll = '2007086'";
                 BindRepeater(RepeaterPresident, queryPresident, conn);
 
-                string queryVP = "SELECT name, roll, TFC_rating,CF_rating from Member Where roll = '2007016'";
+                string queryVP = "SELECT name, roll, TFC_rating,CF_rating,image from Member Where roll = '2007016'";
                 BindRepeater(RepeaterVicePresident, queryVP, conn);
 
-                string queryGS = "SELECT name, roll, TFC_rating,CF_rating from Member Where roll = '2007102'";
+                string queryGS = "SELECT name, roll, TFC_rating,CF_rating,image from Member Where roll = '2007102'";
                 BindRepeater(RepeaterGS, queryGS, conn);
 
-                string queryTresurer = "SELECT name, roll, TFC_rating,CF_rating from Member Where roll = '2107076'";
+                string queryTresurer = "SELECT name, roll, TFC_rating,CF_rating,image from Member Where roll = '2107076'";
                 BindRepeater(RepeaterTresurer, queryTresurer, conn);
 
                 

@@ -25,6 +25,7 @@
     width: 100%;
     max-width: 650px;
     box-sizing: border-box;
+    margin:auto;
 }
 
 /* Typography headers */
